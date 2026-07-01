@@ -1,0 +1,355 @@
+/* ======================
+   GLOBAL
+====================== */
+
+body{
+margin:0;
+background:#141414;
+font-family:Arial, Helvetica, sans-serif;
+color:white;
+overflow-x:hidden;
+}
+
+
+/* ======================
+   NAVBAR
+====================== */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 30px;
+background:black;
+position:sticky;
+top:0;
+z-index:100;
+}
+
+.logo{
+color:red;
+font-size:30px;
+font-weight:bold;
+}
+
+.controls{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+button{
+background:red;
+border:none;
+color:white;
+padding:8px 12px;
+cursor:pointer;
+border-radius:4px;
+}
+
+
+/* ======================
+   HERO SECTION
+====================== */
+
+.hero{
+height:70vh;
+width:100%;
+
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+
+display:flex;
+align-items:center;
+padding-left:60px;
+
+position:relative;
+}
+
+.heroContent{
+background:rgba(0,0,0,0.6);
+padding:25px;
+border-radius:8px;
+max-width:400px;
+}
+
+.hero::after{
+content:"";
+position:absolute;
+bottom:0;
+left:0;
+width:100%;
+height:200px;
+
+background:linear-gradient(
+to top,
+#141414,
+transparent
+);
+}
+
+
+/* ======================
+   MOVIE ROWS
+====================== */
+
+.row{
+display:flex;
+overflow-x:auto;
+gap:15px;
+padding:20px;
+scroll-behavior:smooth;
+}
+
+.row::-webkit-scrollbar{
+display:none;
+}
+
+
+/* ======================
+   MOVIE CARD
+====================== */
+
+.movie{
+position:relative;
+cursor:pointer;
+transition:0.3s;
+min-width:200px;
+}
+
+.movie img{
+width:200px;
+height:260px;
+object-fit:cover;
+border-radius:6px;
+}
+
+.movie:hover{
+transform:scale(1.1);
+z-index:10;
+}
+
+
+/* ======================
+   HOVER CARD
+====================== */
+
+.hoverCard{
+position:absolute;
+bottom:0;
+background:rgba(0,0,0,0.9);
+width:100%;
+padding:10px;
+opacity:0;
+transition:0.3s;
+font-size:12px;
+border-radius:0 0 6px 6px;
+}
+
+.movie:hover .hoverCard{
+opacity:1;
+}
+
+.hoverCard h4{
+margin:0;
+font-size:14px;
+}
+
+.hoverCard p{
+margin:5px 0;
+}
+
+
+/* ======================
+   PREVIEW VIDEO
+====================== */
+
+.previewVideo{
+position:absolute;
+top:0;
+left:0;
+width:200px;
+height:260px;
+object-fit:cover;
+display:none;
+border-radius:6px;
+}
+
+.movie:hover img{
+display:none;
+}
+
+.movie:hover .previewVideo{
+display:block;
+}
+
+
+/* ======================
+   CAROUSEL
+====================== */
+
+.carousel{
+position:relative;
+display:flex;
+align-items:center;
+}
+
+.left,
+.right{
+background:rgba(0,0,0,0.6);
+border:none;
+color:white;
+font-size:28px;
+cursor:pointer;
+padding:10px;
+position:relative;
+z-index:5;
+}
+
+
+/* ======================
+   SEARCH
+====================== */
+
+.searchBox{
+position:relative;
+}
+
+#search{
+padding:6px;
+border-radius:4px;
+border:none;
+}
+
+#suggestions{
+position:absolute;
+background:black;
+width:200px;
+z-index:10;
+}
+
+#suggestions div{
+padding:8px;
+cursor:pointer;
+}
+
+#suggestions div:hover{
+background:#333;
+}
+
+
+/* ======================
+   TRAILER MODAL
+====================== */
+
+.modal{
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.9);
+justify-content:center;
+align-items:center;
+}
+
+.modal iframe{
+width:70%;
+height:70%;
+border:none;
+}
+
+#close{
+position:absolute;
+top:30px;
+right:50px;
+font-size:40px;
+cursor:pointer;
+}
+
+
+/* ======================
+   LOADER
+====================== */
+
+#loader{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:black;
+display:flex;
+justify-content:center;
+align-items:center;
+z-index:999;
+}
+
+.spinner{
+width:60px;
+height:60px;
+border:6px solid #333;
+border-top:6px solid red;
+border-radius:50%;
+animation:spin 1s linear infinite;
+}
+
+@keyframes spin{
+0%{transform:rotate(0deg)}
+100%{transform:rotate(360deg)}
+}
+
+
+/* ======================
+   CATEGORY SECTION
+====================== */
+
+.categorySection{
+margin-bottom:20px;
+}
+
+/* ================= FOOTER ================= */
+
+.footer{
+  background:#111;
+  color:#aaa;
+  padding:30px 20px;
+  margin-top:40px;
+}
+
+.footer-content{
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:20px;
+}
+
+.footer-left h3{
+  color:red;
+  margin-bottom:10px;
+}
+
+.footer-links{
+  display:flex;
+  gap:15px;
+  flex-wrap:wrap;
+}
+
+.footer-links a{
+  color:#aaa;
+  text-decoration:none;
+  font-size:14px;
+}
+
+.footer-links a:hover{
+  color:white;
+}
+
+.footer-bottom{
+  text-align:center;
+  margin-top:20px;
+  font-size:13px;
+  color:#777;
+}
