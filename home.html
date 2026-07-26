@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Netflix Clone</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+<!-- LOADER -->
+
+<div id="loader">
+<div class="spinner"></div>
+</div>
+
+
+<!-- NAVBAR -->
+
+<header class="navbar">
+
+<div class="logo">NETFLIX</div>
+
+<div class="controls">
+
+<div class="searchBox">
+<input type="text" id="search" placeholder="Search movies">
+<div id="suggestions"></div>
+</div>
+
+<select id="categoryFilter">
+
+<option value="All">All Categories</option>
+<option value="Trending">Trending</option>
+<option value="Recommended">Recommended</option>
+<option value="Action">Action</option>
+<option value="SciFi">Sci-Fi</option>
+<option value="Drama">Drama</option>
+<option value="Comedy">Comedy</option>
+<option value="Thriller">Thriller</option>
+<option value="Watchlist">Watchlist</option>
+
+</select>
+
+<button onclick="showWatchlist()">My Watchlist</button>
+
+</div>
+
+</header>
+
+
+<!-- HERO SECTION -->
+
+<section class="hero">
+
+<div class="heroContent">
+
+<h1 id="heroTitle"></h1>
+
+<p id="heroCategory"></p>
+
+<button id="heroTrailer">▶ Play Trailer</button>
+
+</div>
+
+</section>
+
+
+<!-- MOVIE SECTIONS -->
+
+<main id="movieSections">
+
+
+<!-- TRENDING -->
+
+<div class="categorySection" data-category="Trending">
+
+<h2>Trending</h2>
+
+<div class="carousel">
+
+<button class="left" type="button">❮</button>
+
+<div id="trending" class="row"></div>
+
+<button class="right" type="button">❯</button>
+
+</div>
+
+</div>
+
+
+<!-- RECOMMENDED -->
+
+<div class="categorySection" data-category="Recommended">
+
+<h2>Recommended</h2>
+
+<div class="carousel">
+
+<button class="left" type="button">❮</button>
+
+<div id="recommended" class="row"></div>
+
+<button class="right" type="button">❯</button>
+
+</div>
+
+</div>
+
+
+<!-- ACTION -->
+
+<div class="categorySection" data-category="Action">
+
+<h2>Action</h2>
+
+<div class="carousel">
+
+<button class="left" type="button">❮</button>
+
+<div id="Action" class="row"></div>
+
+<button class="right" type="button">❯</button>
+
+</div>
+
+</div>
+
+
+<!-- SCIFI -->
+
+<div class="categorySection" data-category="SciFi">
+
+<h2>Sci-Fi</h2>
+
+<div class="carousel">
+
+<button class="left" type="button">❮</button>
+
+<div id="SciFi" class="row"></div>
+
+<button class="right" type="button">❯</button>
+
+</div>
+
+</div>
+
+
+<!-- DRAMA -->
+
+<div class="categorySection" data-category="Drama">
+
+<h2>Drama</h2>
+
+<div class="carousel">
+
+<button class="left" type="button">❮</button>
+
+<div id="Drama" class="row"></div>
+
+<button class="right" type="button">❯</button>
+
+</div>
+
+</div>
+
+
+<!-- COMEDY -->
+
+<div class="categorySection" data-category="Comedy">
+
+<h2>Comedy</h2>
+
+<div class="carousel">
+
+<button class="left" type="button">❮</button>
+
+<div id="Comedy" class="row"></div>
+
+<button class="right" type="button">❯</button>
+
+</div>
+
+</div>
+
+
+<!-- THRILLER -->
+
+<div class="categorySection" data-category="Thriller">
+
+<h2>Thriller</h2>
+
+<div class="carousel">
+
+<button class="left" type="button">❮</button>
+
+<div id="Thriller" class="row"></div>
+
+<button class="right" type="button">❯</button>
+
+</div>
+
+</div>
+
+
+<!-- WATCHLIST -->
+
+<div class="categorySection" data-category="Watchlist">
+
+<h2>My Watchlist</h2>
+
+<div class="carousel">
+
+<button class="left" type="button">❮</button>
+
+<div id="watchlist" class="row"></div>
+
+<button class="right" type="button">❯</button>
+
+</div>
+
+</div>
+
+
+</main>
+
+
+<!-- TRAILER MODAL -->
+
+<div id="trailerModal" class="modal">
+
+<span id="close">✖</span>
+
+<iframe id="trailerFrame" allowfullscreen allow="autoplay"></iframe>
+
+</div>
+
+
+<!-- JS FILES -->
+
+<script src="script.js"></script>
+<script src="d.js"></script>
+
+<footer class="footer">
+
+  <div class="footer-content">
+
+    <div class="footer-left">
+      <h3>NETFLIX</h3>
+      <p>Unlimited movies, TV shows and more.</p>
+    </div>
+
+    <div class="footer-links">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <a href="#">Privacy</a>
+    </div>
+
+  </div>
+
+  <p class="footer-bottom">© 2026 Netflix Clone. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+</html>

@@ -1,273 +1,196 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" >
 <head>
-
-<title>Netflix Clone</title>
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Netflix Intro Animation Pure CSS</title>
+  <link rel="stylesheet" href="style58.css">
 
 </head>
-
 <body>
 
-
-<!-- LOADER -->
-
-<div id="loader">
-<div class="spinner"></div>
-</div>
-
-
-<!-- NAVBAR -->
-
-<header class="navbar">
-
-<div class="logo">NETFLIX</div>
-
-<div class="controls">
-
-<div class="searchBox">
-<input type="text" id="search" placeholder="Search movies">
-<div id="suggestions"></div>
-</div>
-
-<select id="categoryFilter">
-
-<option value="All">All Categories</option>
-<option value="Trending">Trending</option>
-<option value="Recommended">Recommended</option>
-<option value="Action">Action</option>
-<option value="SciFi">Sci-Fi</option>
-<option value="Drama">Drama</option>
-<option value="Comedy">Comedy</option>
-<option value="Thriller">Thriller</option>
-<option value="Watchlist">Watchlist</option>
-
-</select>
-
-<button onclick="showWatchlist()">My Watchlist</button>
-
-</div>
-
-</header>
-
-
-<!-- HERO SECTION -->
-
-<section class="hero">
-
-<div class="heroContent">
-
-<h1 id="heroTitle"></h1>
-
-<p id="heroCategory"></p>
-
-<button id="heroTrailer">▶ Play Trailer</button>
-
-</div>
-
-</section>
-
-
-<!-- MOVIE SECTIONS -->
-
-<main id="movieSections">
-
-
-<!-- TRENDING -->
-
-<div class="categorySection" data-category="Trending">
-
-<h2>Trending</h2>
-
-<div class="carousel">
-
-<button class="left" type="button">❮</button>
-
-<div id="trending" class="row"></div>
-
-<button class="right" type="button">❯</button>
-
-</div>
-
-</div>
-
-
-<!-- RECOMMENDED -->
-
-<div class="categorySection" data-category="Recommended">
-
-<h2>Recommended</h2>
-
-<div class="carousel">
-
-<button class="left" type="button">❮</button>
-
-<div id="recommended" class="row"></div>
-
-<button class="right" type="button">❯</button>
-
-</div>
-
-</div>
-
-
-<!-- ACTION -->
-
-<div class="categorySection" data-category="Action">
-
-<h2>Action</h2>
-
-<div class="carousel">
-
-<button class="left" type="button">❮</button>
-
-<div id="Action" class="row"></div>
-
-<button class="right" type="button">❯</button>
-
-</div>
-
-</div>
-
-
-<!-- SCIFI -->
-
-<div class="categorySection" data-category="SciFi">
-
-<h2>Sci-Fi</h2>
-
-<div class="carousel">
-
-<button class="left" type="button">❮</button>
-
-<div id="SciFi" class="row"></div>
-
-<button class="right" type="button">❯</button>
-
-</div>
-
-</div>
-
-
-<!-- DRAMA -->
-
-<div class="categorySection" data-category="Drama">
-
-<h2>Drama</h2>
-
-<div class="carousel">
-
-<button class="left" type="button">❮</button>
-
-<div id="Drama" class="row"></div>
-
-<button class="right" type="button">❯</button>
-
-</div>
-
-</div>
-
-
-<!-- COMEDY -->
-
-<div class="categorySection" data-category="Comedy">
-
-<h2>Comedy</h2>
-
-<div class="carousel">
-
-<button class="left" type="button">❮</button>
-
-<div id="Comedy" class="row"></div>
-
-<button class="right" type="button">❯</button>
-
-</div>
-
-</div>
-
-
-<!-- THRILLER -->
-
-<div class="categorySection" data-category="Thriller">
-
-<h2>Thriller</h2>
-
-<div class="carousel">
-
-<button class="left" type="button">❮</button>
-
-<div id="Thriller" class="row"></div>
-
-<button class="right" type="button">❯</button>
-
-</div>
-
-</div>
-
-
-<!-- WATCHLIST -->
-
-<div class="categorySection" data-category="Watchlist">
-
-<h2>My Watchlist</h2>
-
-<div class="carousel">
-
-<button class="left" type="button">❮</button>
-
-<div id="watchlist" class="row"></div>
-
-<button class="right" type="button">❯</button>
-
-</div>
-
-</div>
-
-
-</main>
-
-
-<!-- TRAILER MODAL -->
-
-<div id="trailerModal" class="modal">
-
-<span id="close">✖</span>
-
-<iframe id="trailerFrame" allowfullscreen allow="autoplay"></iframe>
-
-</div>
-
-
-<!-- JS FILES -->
-
-<script src="script.js"></script>
-<script src="d.js"></script>
-
-<footer class="footer">
-
-  <div class="footer-content">
-
-    <div class="footer-left">
-      <h3>NETFLIX</h3>
-      <p>Unlimited movies, TV shows and more.</p>
+<div id="container">
+<!-- Edit the letter attr to: N, E, T, F, L, I or X -->
+   <netflixintro letter="N">
+    <div class="helper-1">
+      <div class="effect-brush">
+        <span class="fur-31"></span>
+        <span class="fur-30"></span>
+        <span class="fur-29"></span>
+        <span class="fur-28"></span>
+        <span class="fur-27"></span>
+        <span class="fur-26"></span>
+        <span class="fur-25"></span>
+        <span class="fur-24"></span>
+        <span class="fur-23"></span>
+        <span class="fur-22"></span>
+        <span class="fur-21"></span>
+        <span class="fur-20"></span>
+        <span class="fur-19"></span>
+        <span class="fur-18"></span>
+        <span class="fur-17"></span>
+        <span class="fur-16"></span>
+        <span class="fur-15"></span>
+        <span class="fur-14"></span>
+        <span class="fur-13"></span>
+        <span class="fur-12"></span>
+        <span class="fur-11"></span>
+        <span class="fur-10"></span>
+        <span class="fur-9"></span>
+        <span class="fur-8"></span>
+        <span class="fur-7"></span>
+        <span class="fur-6"></span>
+        <span class="fur-5"></span>
+        <span class="fur-4"></span>
+        <span class="fur-3"></span>
+        <span class="fur-2"></span>
+        <span class="fur-1"></span>
+      </div>
+      <div class="effect-lumieres">
+        <span class="lamp-1"></span>
+        <span class="lamp-2"></span>
+        <span class="lamp-3"></span>
+        <span class="lamp-4"></span>
+        <span class="lamp-5"></span>
+        <span class="lamp-6"></span>
+        <span class="lamp-7"></span>
+        <span class="lamp-8"></span>
+        <span class="lamp-9"></span>
+        <span class="lamp-10"></span>
+        <span class="lamp-11"></span>
+        <span class="lamp-12"></span>
+        <span class="lamp-13"></span>
+        <span class="lamp-14"></span>
+        <span class="lamp-15"></span>
+        <span class="lamp-16"></span>
+        <span class="lamp-17"></span>
+        <span class="lamp-18"></span>
+        <span class="lamp-19"></span>
+        <span class="lamp-20"></span>
+        <span class="lamp-21"></span>
+        <span class="lamp-22"></span>
+        <span class="lamp-23"></span>
+        <span class="lamp-24"></span>
+        <span class="lamp-25"></span>
+        <span class="lamp-26"></span>
+        <span class="lamp-27"></span>
+        <span class="lamp-28"></span>
+      </div>
     </div>
-
-    <div class="footer-links">
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
-      <a href="#">Privacy</a>
+    <div class="helper-2">
+      <div class="effect-brush">
+        <span class="fur-31"></span>
+        <span class="fur-30"></span>
+        <span class="fur-29"></span>
+        <span class="fur-28"></span>
+        <span class="fur-27"></span>
+        <span class="fur-26"></span>
+        <span class="fur-25"></span>
+        <span class="fur-24"></span>
+        <span class="fur-23"></span>
+        <span class="fur-22"></span>
+        <span class="fur-21"></span>
+        <span class="fur-20"></span>
+        <span class="fur-19"></span>
+        <span class="fur-18"></span>
+        <span class="fur-17"></span>
+        <span class="fur-16"></span>
+        <span class="fur-15"></span>
+        <span class="fur-14"></span>
+        <span class="fur-13"></span>
+        <span class="fur-12"></span>
+        <span class="fur-11"></span>
+        <span class="fur-10"></span>
+        <span class="fur-9"></span>
+        <span class="fur-8"></span>
+        <span class="fur-7"></span>
+        <span class="fur-6"></span>
+        <span class="fur-5"></span>
+        <span class="fur-4"></span>
+        <span class="fur-3"></span>
+        <span class="fur-2"></span>
+        <span class="fur-1"></span>
+      </div>
     </div>
+    <div class="helper-3">
+      <div class="effect-brush">
+        <span class="fur-31"></span>
+        <span class="fur-30"></span>
+        <span class="fur-29"></span>
+        <span class="fur-28"></span>
+        <span class="fur-27"></span>
+        <span class="fur-26"></span>
+        <span class="fur-25"></span>
+        <span class="fur-24"></span>
+        <span class="fur-23"></span>
+        <span class="fur-22"></span>
+        <span class="fur-21"></span>
+        <span class="fur-20"></span>
+        <span class="fur-19"></span>
+        <span class="fur-18"></span>
+        <span class="fur-17"></span>
+        <span class="fur-16"></span>
+        <span class="fur-15"></span>
+        <span class="fur-14"></span>
+        <span class="fur-13"></span>
+        <span class="fur-12"></span>
+        <span class="fur-11"></span>
+        <span class="fur-10"></span>
+        <span class="fur-9"></span>
+        <span class="fur-8"></span>
+        <span class="fur-7"></span>
+        <span class="fur-6"></span>
+        <span class="fur-5"></span>
+        <span class="fur-4"></span>
+        <span class="fur-3"></span>
+        <span class="fur-2"></span>
+        <span class="fur-1"></span>
+      </div>
+    </div>
+    <div class="helper-4">
+      <div class="effect-brush">
+        <span class="fur-31"></span>
+        <span class="fur-30"></span>
+        <span class="fur-29"></span>
+        <span class="fur-28"></span>
+        <span class="fur-27"></span>
+        <span class="fur-26"></span>
+        <span class="fur-25"></span>
+        <span class="fur-24"></span>
+        <span class="fur-23"></span>
+        <span class="fur-22"></span>
+        <span class="fur-21"></span>
+        <span class="fur-20"></span>
+        <span class="fur-19"></span>
+        <span class="fur-18"></span>
+        <span class="fur-17"></span>
+        <span class="fur-16"></span>
+        <span class="fur-15"></span>
+        <span class="fur-14"></span>
+        <span class="fur-13"></span>
+        <span class="fur-12"></span>
+        <span class="fur-11"></span>
+        <span class="fur-10"></span>
+        <span class="fur-9"></span>
+        <span class="fur-8"></span>
+        <span class="fur-7"></span>
+        <span class="fur-6"></span>
+        <span class="fur-5"></span>
+        <span class="fur-4"></span>
+        <span class="fur-3"></span>
+        <span class="fur-2"></span>
+        <span class="fur-1"></span>
+      </div>
+    </div>
+  </netflixintro>
+</div>
 
-  </div>
-
-  <p class="footer-bottom">© 2026 Netflix Clone. All Rights Reserved.</p>
-
-</footer>
+<script>
+window.onload = function () {
+    setTimeout(function () {
+        window.location.href = "home.html";
+    }, 4500);
+};
+</script>
 
 </body>
 </html>
